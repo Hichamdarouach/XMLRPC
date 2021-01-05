@@ -7,17 +7,16 @@ Vagrant up
 Username: root
 Mot de passe : toor
 
+#desactiver la date automatique
+
+# éteignez la VM
+# re allumer la VM
 
 #Si la connection n'est pas établie (Wired unmanaged) NetwokManager -> true
 nano /etc/NetworkManager/NetworkManager.conf  
 Service network-manager restart
 
-# éteignez la VM
-
-#Desactiver la synchronisation automatique de la date/heure de votre VM :
-
-VBoxManage setextradata "xmlrpc_default_1609679322372_10928" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
-
+#changer l'heure manuellement à une date antérieure à 2017
 
 #dès que vous êtes à l'intérieur de votre VM cloner le fichier XMLRPC pour avoir les fichiers nécessaires :
 
