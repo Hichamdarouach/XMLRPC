@@ -1,27 +1,21 @@
-#Lancer le Vagrantfile pour installer la machine virtuelle
+# cloner le repository git dédié à cette faille
+git clone https://github.com/Hichamdarouach/XMLRPC.git
 
-Vagrant up
+# lancer le fichier vmdk avec votre virtual box
 
-#Lancer la machine virtuelle :
+#démarer la machine virtuelle :
 
 Username: root
 Mot de passe : toor
 
-#desactiver la date automatique
-
-# éteignez la VM
-# re allumer la VM
-
-#Si la connection n'est pas établie (Wired unmanaged) NetwokManager -> true
-nano /etc/NetworkManager/NetworkManager.conf  
-Service network-manager restart
 
 #changer l'heure manuellement à une date antérieure à 2017
 
+#Lancer Burp professionnel
+java -jar Burpsuite
+
 #dès que vous êtes à l'intérieur de votre VM cloner le fichier XMLRPC pour avoir les fichiers nécessaires :
-
 git clone https://github.com/Hichamdarouach/XMLRPC.git
-
 
 #Changez la version de java à utiliser (il nous faut la version 8)
 
@@ -30,11 +24,6 @@ sudo update-alternatives --config java
 #Puis sélectionner la version 8 selon le numéro qui lui est attribué
 
 x
-
-#Lancer Burp professionnel
-
-java -jar Burpsuite
-
 
 # pour ajuster votre requête Burp:
 
