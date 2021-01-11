@@ -1,7 +1,8 @@
 # cloner le repository git dédié à cette faille
 git clone https://github.com/Hichamdarouach/XMLRPC.git
 
-# lancer le fichier vmdk avec votre virtual box
+# télécharger et lancer le fichier vmdk avec votre virtual box
+https://drive.google.com/drive/folders/1gsRCxYnoLQVWFCP8AYw59DQfnHgKbDGu?usp=sharing
 
 #démarer la machine virtuelle :
 
