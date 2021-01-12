@@ -58,3 +58,5 @@ https://www.hkcert.org/blog/beware-of-wordpress-sites-being-used-for-distributed
 https://www.hostinger.com/tutorials/xmlrpc-wordpress
 
 https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions
+
+https://www.youtube.com/watch?v=2mGEMR-XQS0&t=209s
