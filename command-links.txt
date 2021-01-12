@@ -53,7 +53,7 @@ https://www.exploit-db.com/exploits/47800
 
 https://kinsta.com/blog/xmlrpc-php
 
-https://www.hkcert.org/myurl/en/blog/14101401
+https://www.hkcert.org/blog/beware-of-wordpress-sites-being-used-for-distributed-denial-of-service-attack
 
 https://www.hostinger.com/tutorials/xmlrpc-wordpress
 
