@@ -9,14 +9,10 @@ https://drive.google.com/drive/folders/1gsRCxYnoLQVWFCP8AYw59DQfnHgKbDGu?usp=sha
 Username: root
 Mot de passe : toor
 
-
-#changer l'heure manuellement à une date antérieure à 2017
-
-#Lancer Burp professionnel
-java -jar Burpsuite
-
 #dès que vous êtes à l'intérieur de votre VM cloner le fichier XMLRPC pour avoir les fichiers nécessaires :
 git clone https://github.com/Hichamdarouach/XMLRPC.git
+
+#changer l'heure manuellement à une date antérieure à 2017
 
 #Changez la version de java à utiliser (il nous faut la version 8)
 
@@ -25,6 +21,9 @@ sudo update-alternatives --config java
 #Puis sélectionner la version 8 selon le numéro qui lui est attribué
 
 x
+
+#Lancer Burp professionnel
+java -jar Burpsuite
 
 # pour ajuster votre requête Burp:
 
